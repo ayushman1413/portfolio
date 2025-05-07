@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayushman Vishwakarma | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body class="dark-theme">
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="assets/Profile picture.png" alt="Profile Picture">
+        </div>
+        <h2 class="name">Ayushman Vishwakarma</h2>
+        <div class="social-icons">
+          <a href="https://github.com/ayushman1413" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/share/19VLd527yQ/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/ayushman__01?igsh=MXVxdDdsbGUwdWd5aA==" class="social-icon"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/qr/DLA6TIZZUVKUL1" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/ayushman01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li class="active"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#services"><i class="fas fa-laptop-code"></i> Services</a></li>
+          <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+          <li><a href="#resume"><i class="fas fa-file"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Projects</a></li>
+          <li><a href="#testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
+          <li><a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn">
+          <i class="fas fa-sun"></i>
+          <span>Light Mode</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Home Section -->
+      <section id="home" class="section active">
+        <div class="hero">
+          <h1 class="hero-title">Ayushman </h1>
+          <p class="hero-subtitle">I'm a <span class="typed-text"></span></p>
+          <div class="hero-cta">
+            <a href="#about" class="btn primary-btn">About Me</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Contact Section -->
+      <section id="home-contact" class="section active">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+          <span class="section-line"></span>
+        </div>
+        <div class="home-contact-container">
+          <div class="home-contact-info">
+            <h3>Let's talk about your project</h3>
+            <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>ayushman1413@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 8887340368</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>East Delhi, 110092, DELHI</p>
+                </div>
+              </div>
+            </div>
+            <div class="home-social-icons">
+              <a href="https://github.com/ayushman1413" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/ayushman01" class="social-icon"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/ayushman__01" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/qr/DLA6TIZZUVKUL1" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="home-contact-form">
+            <form id="homeContactForm">
+              <div class="form-group">
+                <input type="text" name="name" id="home-name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" id="home-email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="home-message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+              </button>
+              <div class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <span class="section-line"></span>
+        </div>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="assets/WhatsApp Image 2025-03-17 at 19.41.58.jpeg" alt="About Me">
+          </div>
+          <div class="about-text">
+            <h3>Web Developer & Designer</h3>
+            <p>I am a passionate Web Developer and Designer with expertise in creating responsive, user-friendly
+              websites and applications. With a strong foundation in front-end and back-end technologies, I deliver
+              high-quality solutions that meet client needs and exceed expectations.</p>
+            <p>My approach combines technical expertise with creative problem-solving to build digital experiences that
+              are both functional and visually appealing. I'm constantly learning and exploring new technologies to stay
+              at the forefront of web development trends.</p>
+
+            <div class="personal-info">
+              <div class="info-item">
+                <span class="info-title">Birthday:</span>
+                <span class="info-value">22 Jan 2006</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Website:</span>
+                <span class="info-value">www.example.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Phone:</span>
+                <span class="info-value">+91 8887340368</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">City:</span>
+                <span class="info-value">East Delhi, 110092</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Age:</span>
+                <span class="info-value">19</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Degree:</span>
+                <span class="info-value">Bachelor</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Email:</span>
+                <span class="info-value">ayushman1413@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Freelance:</span>
+                <span class="info-value">Available</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-title">Github:</span>
+              <span class="info-value">https://github.com/ayushman1413</span>
+            </div><br>
+
+            <div class="info-item">
+              <span class="info-title">LinkdIn:</span>
+              <span class="info-value">https://www.linkedin.com/in/ayushman01</span>
+            </div><br>
+            <div class="info-item">
+              <span class="info-title">Instagram:</span>
+              <span class="info-value">https://www.instagram.com/ayushman__01</span>
+            </div><br>
+            <a href="assets/resume1.pdf" download class="btn primary-btn">Download CV</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="section-title">
+          <h2>My Skills</h2>
+          <span class="section-line"></span>
+        </div>
+        <div class="skills-content">
+          <div class="skill-item">
+            <h3 class="skill-name">HTML</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="100%"></div>
+            </div>
+            <span class="skill-percentage">100%</span>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="100%"></div>
+            </div>
+            <span class="skill-percentage">100%</span>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85%"></div>
+            </div>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">React</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70%"></div>
+            </div>
+            <span class="skill-percentage">70%</span>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">Node.js</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75%"></div>
+            </div>
+            <span class="skill-percentage">75%</span>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">Python</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="40%"></div>
+            </div>
+            <span class="skill-percentage">40%</span>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">MongoDB</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80%"></div>
+            </div>
+            <span class="skill-percentage">80%</span>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">TypeScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="40%"></div>
+            </div>
+            <span class="skill-percentage">40%</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section">
+        <div class="section-title">
+          <h2>My Services</h2>
+          <span class="section-line"></span>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Custom website development with modern technologies and responsive design for optimal user experience.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>Creating websites that work flawlessly across all devices, from desktops to smartphones.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Designing intuitive and engaging user interfaces that enhance the overall user experience.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Backend Development</h3>
+            <p>Building robust server-side applications and APIs to power your web applications.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>Improving your website's visibility in search engines to attract more organic traffic.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Website Maintenance</h3>
+            <p>Regular updates, security patches, and performance optimization to keep your website running smoothly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <span class="section-line"></span>
+        </div>
+        <div class="testimonials-slider">
+          <div class="testimonial-item active">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Ayushman created an outstanding website for my business. His attention to detail and creative
+                  approach exceeded my expectations. Highly recommended!</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img src="assets/Emoji-103-512.webp" alt="Client">
+                </div>
+                <div class="author-info">
+                  <h4>Client 1</h4>
+                  <p>CEO, Tech Solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Working with Ayushman was a pleasure. He delivered the project on time and was very responsive to all
+                  my requests and feedback. I'll definitely work with him again!</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <!-- <img src="/placeholder.svg?height=60&width=60" alt="Client"> -->
+                  <img src="assets/Emoji-103-512.webp" alt="Client">
+
+                </div>
+                <div class="author-info">
+                  <h4>Client 2</h4>
+                  <p>Marketing Director, Innovate Inc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Ayushman's technical skills and creativity are impressive. He transformed our outdated website into a
+                  modern, user-friendly platform that has significantly improved our online presence.</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <!-- <img src="/placeholder.svg?height=60&width=60" alt="Client"> -->
+                  <img src="assets/Emoji-103-512.webp" alt="Client">
+
+                </div>
+                <div class="author-info">
+                  <h4>Client 3</h4>
+                  <p>Founder, Digital Creatives</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+          <div class="testimonial-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
+
+      <!-- Resume Section -->
+      <section id="resume" class="section">
+        <div class="section-title">
+          <h2>Resume</h2>
+          <span class="section-line"></span><br>
+          <a href="assets/resume1.pdf" download class="btn primary-btn">Download Resume</a>
+
+        </div>
+        <div class="resume-content">
+          <div class="resume-column">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Computer Application</h4>
+              <h5>2024 - 2027</h5>
+              <p class="resume-place">University Name</p>
+              <p>St. Andrews Institute of Technology and Management , Gurugram </p>
+            </div>
+        
+            <div class="resume-item">
+              <h4>High School </h4>
+              <h5>2021</h5>
+              <p class="resume-place">School Name</p>
+              <p>R.M.S Inter College, Bikapur, Ayodhya (224204) </p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Intermediate</h4>
+              <h5>2023</h5>
+              <p class="resume-place">School Name</p>
+              <p>R.M.S Inter College, Bikapur, Ayodhya (224204)</p>
+            </div>
+
+
+
+          </div>
+          <div class="resume-column">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4> Web Developer</h4>
+              <h5> Present</h5>
+              <!-- <p class="resume-place">None Name</p> -->
+              <ul>
+                <li>Lead in the development, implementation, and adoption of web applications, mobile apps, and
+                  interactive features.</li>
+                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
+                  project.</li>
+                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
+                  design</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Web Developer</h4>
+              <h5>2025</h5>
+              <!-- <p class="resume-place">Company Name</p> -->
+              <ul>
+                <li>Developed numerous marketing programs (logos, brochures, infographics, presentations, and
+                  advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="section">
+        <div class="section-title">
+          <h2>PROJECTS</h2>
+          <span class="section-line"></span>
+        </div>
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="app">App</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="portfolio-grid">
+
+
+          <div class="portfolio-item" data-category="web" data-description="Smart Attendance is an innovative attendance management system that uses facial recognition technology to automate attendance tracking for schools and organizations." data-url="https://celadon-daffodil-9aff24.netlify.app/" data-year="May 2025">
+            <div class="portfolio-img">
+              <img src="assets/smart atttendance.png" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-info">
+              <h3>Smart Attendance</h3>
+              <p>system for college</p>
+              <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+            </div>
+          </div>
+
+<!-- //////////////// -->
+
+          <div class="portfolio-item" data-category="app" data-description="It's a weather application that provides real-time weather updates and forecasts for any location worldwide, built with modern web technologies." data-url="https://ayush01-weather-app.netlify.app" data-year="April 2025">
+            <div class="portfolio-img">
+              <img src="assets/weather-image.png" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-info">
+              <h3>Weather App</h3>
+              <p>give the weather details of all the place </p>
+              <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+            </div>
+          </div>
+
+ <!-- ///////////////// -->
+
+          <div class="portfolio-item" data-category="design" data-description="Design Project 1 focuses on creating user-friendly UI/UX designs that enhance user engagement and improve overall experience across digital platforms." data-url="https://storied-nougat-f92194.netlify.app/" data-year="November 2024">
+            <div class="portfolio-img">
+              <img src="assets/restaurent.png" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-info">
+              <h3>Restaurent</h3>
+              <p>Frontend Design of restaurent website</p>
+              <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+            </div>
+          </div>
+
+ <!--//////////////////  -->
+          <div class="portfolio-item" data-category="web" data-description="This food-express website based on real time user authentication like Register/signup and login and there  details sent on email address." data-url="https://dashing-rabanadas-6c8b81.netlify.app/" data-year="April 2025">
+            <div class="portfolio-img">
+              <img src="assets/food express.png" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-info">
+              <h3>Food Express</h3>
+              <p>food express webpage based on realtime user login/signup</p>
+              <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+            </div>
+          </div>
+
+<!-- /////////////////// -->
+
+          <div class="portfolio-item" data-category="app" data-description="" data-url="https://appproject2.example.com" data-year="2024">
+            <div class="portfolio-img">
+              <img src="assets/portfolio-5.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-info">
+              <h3>App Project 2</h3>
+              <p>Mobile App</p>
+              <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+            </div>
+          </div>
+
+
+<!-- //////////////// -->
+
+          <div class="portfolio-item" data-category="design" data-description="Design Project 2 delivers creative UI/UX solutions that align with brand identity and enhance user interaction." data-url="https://designproject2.example.com" data-year="2022">
+            <div class="portfolio-img">
+              <img src="assets/portfolio-6.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-info">
+              <h3>Design Project 2</h3>
+              <p>UI/UX Design</p>
+              <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other sections omitted for brevity -->
+
+    </main>
+  </div>
+
+  <!-- Mobile Menu Toggle -->
+  <div class="mobile-nav-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Portfolio Modal -->
+  <div class="portfolio-modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-body">
+        <h2 class="modal-title"></h2>
+        <div class="modal-img">
+          <img src="/placeholder.svg" alt="Portfolio Project">
+        </div>
+        <div class="modal-description">
+          <p></p>
+        </div>
+        <div class="modal-details">
+          <div class="modal-detail">
+            <h4>Client:</h4>
+            <p></p>
+          </div>
+          <div class="modal-detail">
+            <h4>Date:</h4>
+            <p></p>
+          </div>
+          <div class="modal-detail">
+            <h4>Project URL:</h4>
+            <a href="https://ayush01-weather-app.netlify.app/"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

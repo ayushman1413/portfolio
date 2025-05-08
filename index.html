@@ -33,10 +33,10 @@
         <ul>
           <li class="active"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
           <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Projects</a></li>
           <li><a href="#services"><i class="fas fa-laptop-code"></i> Services</a></li>
           <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
           <li><a href="#resume"><i class="fas fa-file"></i> Resume</a></li>
-          <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Projects</a></li>
           <li><a href="#testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
           <li><a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a></li>
           <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
@@ -491,6 +491,20 @@
 
 <!-- //////////////// -->
 
+<div class="portfolio-item" data-category="web" data-description="this project is the Chatboat for college , which is provide the information about st andrews college via (promt or voice) . " data-url=" https://saitm-chatboat.netlify.app/" data-year="May 2025">
+  <div class="portfolio-img">
+    <img src="assets/saitmchatboat.png" alt="Portfolio Item">
+  </div>
+  <div class="portfolio-info">
+    <h3>Saitm chatboat</h3>
+    <p>a chatboat for college queries</p>
+    <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+  </div>
+</div>
+
+
+<!-- ///////////////////////// -->
+
           <div class="portfolio-item" data-category="app" data-description="It's a weather application that provides real-time weather updates and forecasts for any location worldwide, built with modern web technologies." data-url="https://ayush01-weather-app.netlify.app/" data-year="April 2025">
             <div class="portfolio-img">
               <img src="assets/weather-image.png" alt="Portfolio Item">
@@ -506,7 +520,7 @@
 
           <div class="portfolio-item" data-category="design" data-description="Design Project 1 focuses on creating user-friendly UI/UX designs that enhance user engagement and improve overall experience across digital platforms." data-url="https://restaurent-webpage.netlify.app/" data-year="November 2024">
             <div class="portfolio-img">
-              <img src="assets/restaurent.png" alt="Portfolio Item">
+              <img src="assets/restaurent image.png" alt="Portfolio Item">
             </div>
             <div class="portfolio-info">
               <h3>Restaurent</h3>
@@ -644,22 +658,29 @@
                     </div>
                 </div>
             </div>
+
+
+            
             <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary-btn">Send Message</button>
-                </form>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">
+                  <span class="btn-text">Send Message</span>
+                  <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+                </button>
+                <div class="form-status"></div>
+            </form>
             </div>
         </div>
     </section>

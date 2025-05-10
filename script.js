@@ -69,7 +69,38 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Theme Toggle
+  const heroButtons = document.querySelectorAll(".hero-cta a")
+  heroButtons.forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault()
+
+      sections.forEach((section) => {
+        section.classList.remove("active")
+      })
+
+      navLinks.forEach((link) => {
+        link.parentElement.classList.remove("active")
+      })
+
+      const targetId = this.getAttribute("href")
+      document.querySelector(targetId).classList.add("active")
+
+      const correspondingNavLink = Array.from(navLinks).find((link) => link.getAttribute("href") === targetId)
+      if (correspondingNavLink) {
+        correspondingNavLink.parentElement.classList.add("active")
+      }
+
+      if (targetId === "#skills" && document.querySelector(targetId).classList.contains("active")) {
+        animateSkills()
+      }
+      // sidebar close hone ke liye jab mobile view open hoga
+      if (sidebar.classList.contains("active")) {
+        sidebar.classList.remove("active")
+        mobileNavToggle.innerHTML = '<i class="fas fa-bars"></i>'
+      }
+    })
+  })
+
   themeToggleBtn.addEventListener("click", function () {
     document.body.classList.toggle("light-theme")
 
@@ -80,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  // Mobile Navigation
+  // Mobile Navigation jab mobile view on hoga
   mobileNavToggle.addEventListener("click", function () {
     sidebar.classList.toggle("active")
 
@@ -90,8 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
       this.innerHTML = '<i class="fas fa-bars"></i>'
     }
   })
-
-
 
   // Portfolio Filtering
   filterBtns.forEach((btn) => {
@@ -114,9 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-
-  
-  // Portfolio Modal
+  // Portfolio plus + icon ka Modal 
   portfolioItems.forEach((item) => {
     const portfolioLink = item.querySelector(".portfolio-link")
 
@@ -146,8 +173,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-
-  
   modalClose.addEventListener("click", () => {
     portfolioModal.style.display = "none"
     document.body.style.overflow = "auto"
@@ -270,16 +295,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const images = [
       "assets/profile.jpg",
       "assets/about.jpg",
-      "assets/portfolio-1.jpg",
-      "assets/portfolio-2.jpg",
-      "assets/portfolio-3.jpg",
-      "assets/portfolio-4.jpg",
-      "assets/portfolio-5.jpg",
-      "assets/portfolio-6.jpg",
-      "assets/certificate-1.jpg",
-      "assets/certificate-2.jpg",
-      "assets/certificate-3.jpg",
-      "assets/certificate-4.jpg",
+      "assets/Calculator.png",
+      "assets/collge.saitm.png",
+      "assets/Emoji-103-512.webp",
+      "assets/food express.png",
+      "assets/PHOTO-2025-05-05-15-17-12.pdf",
+      "assets/Profile picture.png",
+      "assets/profile.jpg",
+      "assets/restaurent image.png",
+      "assets/saitmchatboat.png",
+      "assets/Screenshot 2025-05-05 at 3.28.24 PM.png",
+      "assets/Screenshot 2025-05-05 at 3.29.47 PM.png",
+      "assets/Screenshot 2025-05-05 at 3.33.49 PM.png",
+      "assets/Screenshot 2025-05-05 at 3.50.07 PM.png",
+      "assets/Screenshot 2025-05-06 at 11.40.50 PM.png",
+      "assets/smart atttendance.png",
+      "assets/weather-image.png",
+      "assets/WhatsApp Image 2025-03-17 at 19.41.58.jpeg",
+      "assets/WhatsApp Image 2025-05-04 at 15.39.32.jpeg"
     ]
 
     images.forEach((src) => {

@@ -274,7 +274,7 @@ body.light-theme {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("");
+  background-image: url("/assets/PHOTO-2025-05-23-21-44-48.jpg" ) ;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -288,7 +288,7 @@ body.light-theme {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.78);
   z-index: 1;
 }
 

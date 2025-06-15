@@ -320,6 +320,6 @@ document.addEventListener("DOMContentLoaded", () => {
       img.src = src
     })
   }
-
+//  preload image
   preloadImages()
 })

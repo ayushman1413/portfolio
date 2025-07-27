@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
+
   themeToggleBtn.addEventListener("click", function () {
     document.body.classList.toggle("light-theme")
 

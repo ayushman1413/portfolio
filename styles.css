@@ -92,6 +92,7 @@ body.light-theme {
   --hover-color: var(--light-hover);
 }
 
+
 /* Sidebar Styles */
 .sidebar {
   width: var(--sidebar-width);
